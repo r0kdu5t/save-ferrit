@@ -16,7 +16,7 @@
 
 // constants won't change. Used here to set a pin number:
 const int ledPIN = 3;  // the number of the LED pin
-const long interval = 1000;           // interval at which to blink (milliseconds)
+const long interval = 500;           // interval at which to blink (milliseconds)
  
 // Values defined in CONFIG.h
 const char secret[] = SECRET;
@@ -43,7 +43,8 @@ void setup() {
   // make the pushbutton's pin an input:
   pinMode(pushButton, INPUT);
   // set the digital pin as output:
-  pinMode(ledPIN, OUTPUT);  
+  pinMode(ledPIN, OUTPUT);
+    digitalWrite(ledPIN, HIGH);  
 
 }
 

@@ -8,6 +8,8 @@
 /*
  * INCLUDES
  */
+#define DEBUG
+#include <DebugUtils.h> 
 #include "CONFIG.h"
 
 /*
@@ -46,6 +48,12 @@ void setup() {
   pinMode(ledPIN, OUTPUT);
     digitalWrite(ledPIN, HIGH);  
 
+// ======================================================================
+   DEBUG_PRINT("interval");
+   DEBUG_PRINT(interval);
+
+   DEBUG_PRINT("ledPIN");
+   DEBUG_PRINT(ledPIN);
 }
 
 /*

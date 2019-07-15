@@ -10,6 +10,12 @@
 */
 //#define DEBUG
 #include <DebugUtils.h>
+/*
+ * 
+ * ###>> IMPORTANT - Rename USER_CONFIG.h to CONFIG.h and modify as necessary!  <<###
+ * 
+ * ###>> Using linux cli execute: cp -vi USER_CONFIG.h CONFIG.h                 <<###
+*/
 #include "CONFIG.h"
 
 /*

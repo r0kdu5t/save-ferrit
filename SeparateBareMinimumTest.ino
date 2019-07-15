@@ -66,6 +66,19 @@ void setup() {
 
   DEBUG_PRINT("ledPIN");
   DEBUG_PRINT(ledPIN);
+
+  // ======================================================================
+  /*
+   * Info String in Flash
+  */
+  Serial.print( F("Compiled: "));
+  Serial.print( F(__DATE__));
+  Serial.print( F(", "));
+  Serial.println( F(__TIME__));
+  Serial.print( F(", "));
+  Serial.println( F(__FILE__));
+  
+  delay(2000);
 }
 
 /*
@@ -75,7 +88,7 @@ void loop() {
   // read the input pin:
   int buttonState = digitalRead(pushButton);
   // print out the state of the button:
-  Serial.println(buttonState);
+  // Serial.println(buttonState);
   if ( buttonState == HIGH ) {
     z_BlinkWithoutDelay();
   }
